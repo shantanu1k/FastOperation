@@ -4,3 +4,7 @@
 * You can do that just by importing this package.
 * Since this is the first release some basic operations are included. 
 * More operation will be added in upcoming releases :)
+
+## [0.0.2] - 15-02-2021.
+
+* Added Decimal to octal function.
