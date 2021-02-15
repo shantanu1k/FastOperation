@@ -16,4 +16,14 @@ class FastOperation {
   num power(num a,num b){
     return pow(a,b);
   }
+  num DecimalToOctal(num n){
+  num octal = 0;
+  int multiplier = 0;
+  while(n>0){
+    octal = octal + (n%8)*pow(10,multiplier);
+    n = (n/8).toInt();
+    multiplier++;
+  }
+  return octal.toInt();
+ }
 }
