@@ -1,9 +1,8 @@
 name: FastOperation
-description: A new Flutter package project.
-version: 0.0.1
-author:
-homepage:
-
+version: 0.0.3
+description: A dart package for essential quick conversions.
+author: Shantanu Kawade <shantanukawade2@gmail.com>
+repository: https://github.com/shantanu1k/FastOperation/
 environment:
   sdk: ">=2.7.0 <3.0.0"
   flutter: ">=1.17.0"
