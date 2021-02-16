@@ -61,10 +61,6 @@ class FastOperation {
     else binary = "${binary}" + "1";
     n = n ~/ 2;
   }
-  String reverseString(String input) {
-    var chars = input.split('');
-    return chars.reversed.join();
-  }
   binary = reverseString(binary);
   return binary;
  }
