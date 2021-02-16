@@ -8,3 +8,8 @@
 ## [0.0.2] - 15-02-2021.
 
 * Added Decimal to octal function.
+
+## [0.0.3] - 16-02-2021
+
+* Added Decimal to Hex function.
+* Added Decimal to Binary function.
