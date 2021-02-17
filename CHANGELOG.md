@@ -13,3 +13,4 @@
 
 * Added Decimal to Hex function.
 * Added Decimal to Binary function.
+* Added Hex to Decimal function.

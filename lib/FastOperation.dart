@@ -64,4 +64,25 @@ class FastOperation {
   binary = reverseString(binary);
   return binary;
  }
+ num HexToDecimal(String s){
+  int i = s.length-1;
+  var decimal = 0;
+  int multiplier = 0;
+  while(i>=0){
+    var c = s[i];
+    if(c == 'A') decimal += 10*pow(16,multiplier);
+    else if(c == 'B') decimal += 11*pow(16,multiplier);
+    else if(c == 'C') decimal += 12*pow(16,multiplier);
+    else if(c == 'D') decimal += 13*pow(16,multiplier);
+    else if(c == 'E') decimal += 14*pow(16,multiplier);
+    else if(c == 'F') decimal += 15*pow(16,multiplier);
+    else{
+      var temp = int.parse(c);
+      decimal += temp*pow(16,multiplier);
+    }
+    multiplier++;
+    i--;
+  }
+  return decimal;
+}
 }
