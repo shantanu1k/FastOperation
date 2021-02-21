@@ -9,7 +9,7 @@ enum DISTANCE{
   feets,
 }
 class distance{
-  num convert(num value,{DISTANCE from,DISTANCE to}){
+  num convert({num value,DISTANCE from,DISTANCE to}){
     num ans = 0;
     switch(from){
       case DISTANCE.kilometer:

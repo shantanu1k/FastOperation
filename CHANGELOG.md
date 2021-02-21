@@ -13,3 +13,5 @@
 
 * Updated distance function.
 * Added weight function.
+* Added temperature function.
+* Added angle function.

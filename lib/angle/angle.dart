@@ -1,0 +1,32 @@
+import 'dart:math';
+enum ANGLE{
+  radians,
+  gradians,
+  degrees
+}
+class angle{
+  num convert({num value,ANGLE from,ANGLE to}){
+    num ans = 0;
+    switch(from){
+      case ANGLE.radians:
+        if(to == ANGLE.degrees) ans = value*57.2958;
+        else if(to == ANGLE.gradians) ans =  value*63.66198;
+        else if(to == ANGLE.radians) ans = value;
+        break;
+      case ANGLE.gradians:
+        if(to == ANGLE.degrees) ans = value*0.9;
+        else if(to == ANGLE.gradians) ans =  value;
+        else if(to == ANGLE.radians) ans = value*0.015708;
+        break;
+      case ANGLE.degrees:
+        if(to == ANGLE.degrees) ans = value;
+        else if(to == ANGLE.gradians) ans =  value*1.111;
+        else if(to == ANGLE.radians) ans = value*0.017453;
+        break;
+    }
+    return ans;
+  }
+}
+void main(){
+  print(angle().convert(value: 129.2,from: ANGLE.degrees,to: ANGLE.radians));
+}
