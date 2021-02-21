@@ -5,8 +5,8 @@ import 'package:FastOperation/FastOperation.dart';
 void main() {
   test('adds one to input values', () {
     final distanceTest = distance();
-    expect(distanceTest.centToInch(231.323), 91.072096423);
-    expect(distanceTest.inchToKilo(3435221.1), 85.8805275);
-    expect(distanceTest.miliToInch(645.321), 25.4063523021);
+    expect(distanceTest.convert(231,from: DISTANCE.centimeter,to: DISTANCE.inch), 90.9447);
+    expect(distanceTest.convert(3435221.1,from: DISTANCE.feets,to: DISTANCE.kilometer), 1047.05539128);
+    expect(distanceTest.convert(645.321,from: DISTANCE.meter, to: DISTANCE.miles), 25.4063523021);
   });
 }
