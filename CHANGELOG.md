@@ -14,3 +14,7 @@
 * Added Decimal to Hex function.
 * Added Decimal to Binary function.
 * Added Hex to Decimal function.
+
+## [1.0.0] - 21-02-2021
+
+* Updated distance functions.
