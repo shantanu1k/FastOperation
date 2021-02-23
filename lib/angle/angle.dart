@@ -27,6 +27,3 @@ class angle{
     return ans;
   }
 }
-void main(){
-  print(angle().convert(value: 129.2,from: ANGLE.degrees,to: ANGLE.radians));
-}
