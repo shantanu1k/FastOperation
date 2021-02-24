@@ -15,3 +15,7 @@
 * Added weight function.
 * Added temperature function.
 * Added angle function.
+
+## [1.5.0] - 24-02-2021
+
+* Minor changes.
