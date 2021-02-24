@@ -8,7 +8,7 @@ enum WEIGHT{
   tonnes
 }
 class weight{
-  num convert(num value,{WEIGHT from, WEIGHT to}){
+  num convert({num value,WEIGHT from, WEIGHT to}){
     num ans = 0;
     switch(from){
       case WEIGHT.grams:
