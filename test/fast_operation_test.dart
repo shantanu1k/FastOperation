@@ -8,7 +8,7 @@ void main() {
     final baseConverterTest = base_converter();
     final angleTest = angle();
     expect(distanceTest.convert(value: 231,from: DISTANCE.centimeter,to: DISTANCE.inch), 90.9447);
-    expect(distanceTest.convert(value: 3435221.1,from: DISTANCE.feets,to: DISTANCE.kilometer), 1047.05539128);
+    expect(distanceTest.convert(value: 3435221.1,from: DISTANCE.feet,to: DISTANCE.kilometer), 1047.05539128);
     expect(distanceTest.convert(value: 645.321,from: DISTANCE.meter, to: DISTANCE.miles), 25.4063523021);
     expect(weightTest.convert(from: WEIGHT.ounces,to: WEIGHT.grams,value: 98),2778.25296);
     expect(weightTest.convert(from: WEIGHT.kilograms,to: WEIGHT.pounds,value: 321.754),709.3462687420001);

@@ -6,7 +6,7 @@ enum DISTANCE{
   miles,
   centimeter,
   inch,
-  feets,
+  feet,
 }
 class distance{
   num convert({num value,DISTANCE from,DISTANCE to}){
@@ -14,7 +14,7 @@ class distance{
     switch(from){
       case DISTANCE.kilometer:
         if(to == DISTANCE.centimeter) ans = value*pow(10,5);
-        else if(to == DISTANCE.feets) ans = 3280.84*value;
+        else if(to == DISTANCE.feet) ans = 3280.84*value;
         else if(to == DISTANCE.miles) ans = 0.621371*value;
         else if(to == DISTANCE.milimeter) ans = value*pow(10,6);
         else if(to == DISTANCE.meter) ans = value*pow(10,3);
@@ -23,7 +23,7 @@ class distance{
         break;
       case DISTANCE.milimeter:
         if(to == DISTANCE.centimeter) ans = 0.1*value;
-        else if(to == DISTANCE.feets) ans = value*0.003281;
+        else if(to == DISTANCE.feet) ans = value*0.003281;
         else if(to == DISTANCE.inch) ans = value*0.03937;
         else if(to == DISTANCE.kilometer) ans = value*pow(10,-7);
         else if(to == DISTANCE.meter) ans = value*pow(10,-3);
@@ -32,7 +32,7 @@ class distance{
         break;
       case DISTANCE.meter:
         if(to == DISTANCE.centimeter) ans = 100*value;
-        else if(to == DISTANCE.feets) ans = value*3.281;
+        else if(to == DISTANCE.feet) ans = value*3.281;
         else if(to == DISTANCE.inch) ans = value*39.37;
         else if(to == DISTANCE.kilometer) ans = value*pow(10,-3);
         else if(to == DISTANCE.meter) ans = value;
@@ -41,7 +41,7 @@ class distance{
         break;
       case DISTANCE.miles:
         if(to == DISTANCE.centimeter) ans = 160934.4*value;
-        else if(to == DISTANCE.feets) ans = value*5280;
+        else if(to == DISTANCE.feet) ans = value*5280;
         else if(to == DISTANCE.inch) ans = value*63360;
         else if(to == DISTANCE.kilometer) ans = value*1.609344;
         else if(to == DISTANCE.meter) ans = value*1609.344;
@@ -50,7 +50,7 @@ class distance{
         break;
       case DISTANCE.centimeter:
         if(to == DISTANCE.centimeter) ans = value;
-        else if(to == DISTANCE.feets) ans = value*0.03281;
+        else if(to == DISTANCE.feet) ans = value*0.03281;
         else if(to == DISTANCE.inch) ans = value*0.3937;
         else if(to == DISTANCE.kilometer) ans = value*pow(10,-6);
         else if(to == DISTANCE.meter) ans = value*pow(10,-2);
@@ -59,16 +59,16 @@ class distance{
         break;
       case DISTANCE.inch:
         if(to == DISTANCE.centimeter) ans = 2.54*value;
-        else if(to == DISTANCE.feets) ans = value*0.083333;
+        else if(to == DISTANCE.feet) ans = value*0.083333;
         else if(to == DISTANCE.inch) ans = value;
         else if(to == DISTANCE.kilometer) ans = value*pow(10,-6)*25.4;
         else if(to == DISTANCE.meter) ans = value*pow(10,-4)*254;
         else if(to == DISTANCE.miles) ans = value*pow(10,-5)*1.57828;
         else if(to == DISTANCE.milimeter) ans = value*25.4;
         break;
-      case DISTANCE.feets:
+      case DISTANCE.feet:
         if(to == DISTANCE.centimeter) ans = 30.48*value;
-        else if(to == DISTANCE.feets) ans = value;
+        else if(to == DISTANCE.feet) ans = value;
         else if(to == DISTANCE.inch) ans = value*12;
         else if(to == DISTANCE.kilometer) ans = value*pow(10,-4)*3.048;
         else if(to == DISTANCE.meter) ans = value*0.3048;
