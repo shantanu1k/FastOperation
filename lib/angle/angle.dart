@@ -1,4 +1,5 @@
 import 'dart:math';
+///enumeration for angle units
 enum ANGLE{
   radians,
   gradians,

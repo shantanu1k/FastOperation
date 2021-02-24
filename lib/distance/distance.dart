@@ -1,4 +1,5 @@
 import 'dart:math';
+///enumeration for distance units
 enum DISTANCE{
   kilometer,
   milimeter,

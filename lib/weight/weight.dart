@@ -1,4 +1,5 @@
 import 'dart:math';
+///enumeration for weight units
 enum WEIGHT{
   grams,
   kilograms,

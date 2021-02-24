@@ -1,4 +1,5 @@
 import 'dart:math';
+///enumeration for temperature units
 enum TEMPERATURE{
   celsius,
   fahrenheit,

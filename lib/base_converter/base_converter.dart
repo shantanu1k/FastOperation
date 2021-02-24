@@ -1,6 +1,6 @@
 import 'dart:math';
 class base_converter{
-num decimalToOctal(int n){
+  num decimalToOctal(int n){
     num octal = 0;
     int multiplier = 0;
     while(n>0){

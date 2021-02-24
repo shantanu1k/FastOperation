@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:fast_operation/fast_operation.dart';
 void main() {
-  test('adds one to input values', () {
+  test('tests for different properties', () {
     final distanceTest = distance();
     final weightTest = weight();
     final temperatureTest = temperature();
@@ -9,7 +9,7 @@ void main() {
     final angleTest = angle();
     expect(distanceTest.convert(value: 231,from: DISTANCE.centimeter,to: DISTANCE.inch), 90.9447);
     expect(distanceTest.convert(value: 3435221.1,from: DISTANCE.feet,to: DISTANCE.kilometer), 1047.05539128);
-    expect(distanceTest.convert(value: 645.321,from: DISTANCE.meter, to: DISTANCE.miles), 25.4063523021);
+    expect(distanceTest.convert(value: 645.321,from: DISTANCE.meter, to: DISTANCE.miles), 0.40100246940000006);
     expect(weightTest.convert(from: WEIGHT.ounces,to: WEIGHT.grams,value: 98),2778.25296);
     expect(weightTest.convert(from: WEIGHT.kilograms,to: WEIGHT.pounds,value: 321.754),709.3462687420001);
     expect(weightTest.convert(from: WEIGHT.tonnes, to: WEIGHT.kilograms,value: 74.21),74210);
