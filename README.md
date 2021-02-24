@@ -20,7 +20,7 @@ dependencies:
 
 ## Usage
 
-```
+```dart
 import 'package:fast_operation/fast_operation.dart';
 void main(){
   var miles = 3.12;
@@ -37,14 +37,14 @@ While using ```from``` and ```to```, just type ```PROPERTY``` in caps and use ``
 
 E.g.
 
-```
+```dart
   var meter = distance().convert(value: miles, from: DISTANCE.miles, to: DISTANCE.meter);
 ```
 
 Here, only exception is for 'base'.
 To change base between Decimal, Binary, Octal, Hexadecimal:
 
-```
+```dart
   var decimal = 123;
   var binary = base_converter().decimalToBinary(decimal);
 ```
