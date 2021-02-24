@@ -1,6 +1,6 @@
 name: fast_operation
 version: 1.5.0
-description: A dart package for essential quick conversions.
+description: A dart package for essential quick conversions for physical properties like distance, weight, temperature. Just import one file,then access al of its properties.
 repository: https://github.com/shantanu1k/fast_operation/
 environment:
   sdk: ">=2.7.0 <3.0.0"
