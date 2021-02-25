@@ -1,3 +1,5 @@
+[![pub package](https://img.shields.io/pub/v/fast_operation.svg)](https://pub.dev/packages/fast_operation)
+
 # Getting started
 
 A dart package for conversion of various units:
