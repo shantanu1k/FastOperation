@@ -1,6 +1,6 @@
 library fast_operation;
-export 'base_converter/base_converter.dart';
-export 'distance/distance.dart';
-export 'weight/weight.dart';
-export 'temperature/temperature.dart';
-export 'angle/angle.dart';
+export 'base_converter/BaseConverter.dart';
+export 'distance/Distance.dart';
+export 'weight/Weight.dart';
+export 'temperature/Temperature.dart';
+export 'angle/Angle.dart';

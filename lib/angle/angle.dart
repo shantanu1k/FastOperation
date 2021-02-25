@@ -1,11 +1,10 @@
-import 'dart:math';
 ///enumeration for angle units
 enum ANGLE{
   radians,
   gradians,
   degrees
 }
-class angle{
+class Angle{
   num convert({num value,ANGLE from,ANGLE to}){
     num ans = 0;
     switch(from){

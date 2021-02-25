@@ -2,11 +2,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:fast_operation/fast_operation.dart';
 void main() {
   test('tests for different properties', () {
-    final distanceTest = distance();
-    final weightTest = weight();
-    final temperatureTest = temperature();
-    final baseConverterTest = base_converter();
-    final angleTest = angle();
+    final distanceTest = Distance();
+    final weightTest = Weight();
+    final temperatureTest = Temperature();
+    final baseConverterTest = BaseConverter();
+    final angleTest = Angle();
     expect(distanceTest.convert(value: 231,from: DISTANCE.centimeter,to: DISTANCE.inch), 90.9447);
     expect(distanceTest.convert(value: 3435221.1,from: DISTANCE.feet,to: DISTANCE.kilometer), 1047.05539128);
     expect(distanceTest.convert(value: 645.321,from: DISTANCE.meter, to: DISTANCE.miles), 0.40100246940000006);

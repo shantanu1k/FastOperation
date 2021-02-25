@@ -8,7 +8,7 @@ enum WEIGHT{
   miligrams,
   tonnes
 }
-class weight{
+class Weight{
   num convert({num value,WEIGHT from, WEIGHT to}){
     num ans = 0;
     switch(from){

@@ -1,11 +1,10 @@
-import 'dart:math';
 ///enumeration for temperature units
 enum TEMPERATURE{
   celsius,
   fahrenheit,
   kelvin
 }
-class temperature{
+class Temperature{
   num convert({num value,TEMPERATURE from, TEMPERATURE to}){
     num ans = 0;
     switch(from){

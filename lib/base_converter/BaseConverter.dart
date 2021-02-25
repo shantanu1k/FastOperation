@@ -1,5 +1,5 @@
 import 'dart:math';
-class base_converter{
+class BaseConverter{
   num decimalToOctal(int n){
     num octal = 0;
     int multiplier = 0;

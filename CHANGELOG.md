@@ -20,3 +20,6 @@
 
 * Minor changes.
 
+## [1.7.0] - 25-02-2021
+
+* Minor fixes.

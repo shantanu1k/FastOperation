@@ -9,7 +9,7 @@ enum DISTANCE{
   inch,
   feet,
 }
-class distance{
+class Distance{
   num convert({num value,DISTANCE from,DISTANCE to}){
     num ans = 0;
     switch(from){
